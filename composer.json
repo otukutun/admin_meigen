@@ -1,0 +1,35 @@
+{
+    "name": "admin_meigen",
+    "repositories": [
+    {   
+        "type": "pear",
+        "url": "http://pear.cakephp.org"
+    }   
+    ],  
+
+        "config": {
+            "vendor-dir": "Vendor/"
+        },  
+
+        "extra": {
+            "installer-paths": {
+                "app/Plugin/DebugKit": ["cakephp/debug_kit"],
+                "app/Vendor/Imagine": ["imagine/imagine"],
+                "app/Plugin/BoostCake": ["slywalker/boost_cake"]
+            }   
+        },  
+
+        "require" :
+        {   
+            "php": ">=5.5",
+            "pear-pear.cakephp.org/CakePHP": ">=2.4.0",
+            "cakephp/debug_kit": "2.2.*",
+            "imagine/imagine": "~0.5.0",
+            "slywalker/boost_cake": "*" 
+        },  
+        "require-dev" :
+        {   
+            "phpunit/phpunit": "3.7.*"
+        }   
+
+}
