@@ -58,7 +58,7 @@ echo $this->fetch('css');
                     <ul class="dropdown-menu">
                         <li><?php echo $this->Html->link(__('タグ追加'), array('controller' => 'tags', 'action' => 'add')); ?> </li>
                         <li class="divider"></li>
-                        <li><?php echo $this->Html->link(__('タグ一覧'), array('controller' => 'tags', 'action' => 'add')); ?> </li>
+                        <li><?php echo $this->Html->link(__('タグ一覧'), array('controller' => 'tags', 'action' => 'index')); ?> </li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -66,7 +66,7 @@ echo $this->fetch('css');
                     <ul class="dropdown-menu">
                         <li><?php echo $this->Html->link(__('追加'), array('controller' => 'meigens', 'action' => 'add')); ?> </li>
                         <li class="divider"></li>
-                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'meigens', 'action' => 'add')); ?> </li>
+                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'meigens', 'action' => 'index')); ?> </li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -74,7 +74,7 @@ echo $this->fetch('css');
                     <ul class="dropdown-menu">
                         <li><?php echo $this->Html->link(__('追加'), array('controller' => 'scenes', 'action' => 'add')); ?> </li>
                         <li class="divider"></li>
-                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'scenes', 'action' => 'add')); ?> </li>
+                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'scenes', 'action' => 'index')); ?> </li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -82,7 +82,7 @@ echo $this->fetch('css');
                     <ul class="dropdown-menu">
                         <li><?php echo $this->Html->link(__('追加'), array('controller' => 'authors', 'action' => 'add')); ?> </li>
                         <li class="divider"></li>
-                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'authors', 'action' => 'add')); ?> </li>
+                        <li><?php echo $this->Html->link(__('一覧'), array('controller' => 'authors', 'action' => 'index')); ?> </li>
                     </ul>
                 </li>
                </ul>

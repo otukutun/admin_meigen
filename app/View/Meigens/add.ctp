@@ -17,7 +17,7 @@
 		echo $this->Form->input('meigen');
 		echo $this->Form->input('image',['type' => 'file']);
 		echo $this->Form->input('product');
-		echo $this->Form->input('author');
+		echo $this->Form->input('name');
 		echo $this->Form->input('user_id');
 		//echo $this->Form->input('category_id');
 		echo $this->Form->input('author_id');

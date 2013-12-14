@@ -1,5 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('Image', 'Lib');
+//App::import('Lib', 'MeigenImage');
 /**
  * Author Model
  *
@@ -91,6 +93,12 @@ class Author extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		)
-	);
+    );
+
+    public function fileupload($file,$uploaddir) {
+        $image = new Image($file,$uploaddir);
+        return $image->fileupload();
+    }
+
 
 }
