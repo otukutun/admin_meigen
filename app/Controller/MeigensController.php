@@ -83,7 +83,8 @@ class MeigensController extends AppController {
 			}
 		} else {
 			$options = array('conditions' => array('Meigen.' . $this->Meigen->primaryKey => $id));
-			$this->request->data = $this->Meigen->find('first', $options);
+            $this->request->data = $this->Meigen->find('first', $options);
+            $this->request->data['Meigen']['name'] = $this->request->data['Meigen']['author'];
 		}
 		$users = $this->Meigen->User->find('list');
 		$categories = $this->Meigen->Category->find('list');
